@@ -2,7 +2,7 @@ package Dima.d;
 
 import java.util.Objects;
 
-public abstract class Publication {
+public abstract class Publication implements Printable {
 
     private String title;
 

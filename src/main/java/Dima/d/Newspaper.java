@@ -22,7 +22,7 @@ public class Newspaper extends Publication implements Printable {
 
     @Override
     public void printDetails() {
-        System.out.println(toString());
+        System.out.println(this.toString());
 
     }
 

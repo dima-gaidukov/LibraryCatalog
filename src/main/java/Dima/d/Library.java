@@ -5,7 +5,6 @@ import java.util.List;
 public class Library {
 
 
-
     private int publicationCount = 1;
     private List<Publication> publications;
 
@@ -23,13 +22,13 @@ public class Library {
 
     public void listPublications() {
 
-        if(publications == null) {
+        if(publications.isEmpty()) {
             System.out.println("Cписок пуст");
             return;
         }
 
         for (Publication pub : publications) {
-            System.out.println(pub.toString());
+            pub.printDetails();
         }
     }
 
